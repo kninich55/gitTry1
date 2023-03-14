@@ -5,6 +5,8 @@ public class App1 {
         Scanner input= new Scanner(System.in);
         System.out.println("Enter your name: ");
         String username=input.nextLine();
+        if(username.length()>5)
+            username=username.substring(0,5);
         int rand=(int) (Math.random()*100);
         String user_id=username+"_"+String.valueOf(rand);
         User user=new User(username,user_id);
