@@ -10,7 +10,7 @@ public class App1 {
         int rand=(int) (Math.random()*100);
         String user_id=username+"_"+String.valueOf(rand);
         User user=new User(username,user_id);
-        System.out.println("Your user_id: " + user.toString());
+        System.out.println("Your user_id: " + user.toString().toUpperCase());
 
     }
 }
